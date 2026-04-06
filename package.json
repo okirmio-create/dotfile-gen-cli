@@ -1,0 +1,28 @@
+{
+  "name": "dotfile-gen-cli",
+  "version": "1.0.0",
+  "description": "Generate common dotfiles (.editorconfig, .prettierrc, .eslintrc, .npmrc) from templates",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "dotfile-gen-cli": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okirmio-create/dotfile-gen-cli.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "tsup": "^8.1.0",
+    "@types/node": "^20.14.0"
+  }
+}
